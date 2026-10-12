@@ -18,6 +18,7 @@ Plain HTML/CSS/JS with no build step, ready for GitHub + Vercel.
 | `nav.js` | Mobile menu, highlights today's hours, footer year |
 | `logo-mark.svg` | Rainbow logo mark used in the nav and favicon |
 | `favicon*.png`, `favicon.ico`, `apple-touch-icon.png` | Browser and phone icons |
+| `gallery-*.jpg` | Gallery photos (tap to enlarge) |
 | `og-image.png` | Preview image shown when the link is shared |
 | `vercel.json` | Clean URLs (`/services` instead of `/services.html`) |
 
@@ -53,7 +54,7 @@ Go to Vercel → Project Settings → Domains, add your domain, and follow the D
 ---
 
 ## Customization checklist
-- [ ] **Gallery photos:** save images as `gallery-1.jpg` … `gallery-8.jpg` and follow the comment above each tile in `gallery.html`
+- [x] **Gallery photos:** 10 photos added (`gallery-1.jpg` … `gallery-10.jpg`). To add more, save the next number and copy a `<a class="g-tile">` line in `gallery.html` with a short description in `alt`
 - [ ] **About photo:** add `about-salon.jpg` and follow the comment in `about.html`
 - [ ] **About story:** the copy marked `<!-- EDIT -->` in `about.html` is a draft; confirm it with the owners
 - [ ] **Services:** double-check the list in `services.html` against the current menu
