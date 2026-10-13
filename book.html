@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request an Appointment | Rainbow Nails, Kaimukī</title>
+  <meta name="description" content="Request a nail, lash, waxing or facial appointment at Rainbow Nails in Kaimukī. Pick your services and a time, and we'll call or text to confirm." />
+  <meta property="og:title" content="Request an Appointment | Rainbow Nails, Kaimukī" />
+  <meta property="og:description" content="Request a nail, lash, waxing or facial appointment at Rainbow Nails in Kaimukī. Pick your services and a time, and we'll call or text to confirm." />
+  <meta property="og:image" content="og-image.png" />
+  <meta name="theme-color" content="#3B1E33" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Shrikhand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Rainbow Nails, Kaimukī, home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#3B1E33"/><g fill="none" stroke-width="3.1"><path stroke="#D9443A" d="M8 46 A24 24 0 0 1 56 46"/><path stroke="#EE7D2B" d="M11 46 A21 21 0 0 1 53 46"/><path stroke="#F2B632" d="M14 46 A18 18 0 0 1 50 46"/><path stroke="#4E9A62" d="M17 46 A15 15 0 0 1 47 46"/><path stroke="#3E95C9" d="M20 46 A12 12 0 0 1 44 46"/><path stroke="#7D86D6" d="M23 46 A9 9 0 0 1 41 46"/><path stroke="#B48AD0" d="M26 46 A6 6 0 0 1 38 46"/></g><g transform="translate(32 43.2) scale(0.23)"><g fill="#FFF8EE" stroke="#3B1E33" stroke-width="3"><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(12)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(84)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(156)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(228)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(300)"/></g><circle r="7" fill="#F2B632" stroke="#3B1E33" stroke-width="2.5"/></g></svg>
+        <span class="nav-logo-text">Rainbow Nails<span class="nav-logo-sub">KAIMUKĪ</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Visit</a></li>
+        <li><a href="book.html" class="nav-cta active" aria-current="page">Request an appointment</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </nav>
+
+  <main>
+  <header class="page-header">
+    <div class="wrap">
+      <h1 class="rainbow-shadow--sm">Request an appointment</h1>
+      <p>Pick your services, then a day and time. This sends us a request, and we&rsquo;ll call or text to confirm.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <!-- FORMSPREE: replace YOUR_FORM_ID with the ID from your Formspree form (see README) -->
+      <form id="book-form" class="book" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="book-services">
+
+        <fieldset class="book-group">
+          <legend><span class="chip c1"></span>Manicures</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Regular manicure" data-min="30" /><span class="name">Regular manicure</span><span class="dur">30 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Deluxe manicure" data-min="45" /><span class="name">Deluxe manicure</span><span class="dur">45 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Gel manicure" data-min="45" /><span class="name">Gel manicure</span><span class="dur">45 min</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="book-group">
+          <legend><span class="chip c2"></span>Pedicures</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Spa pedicure" data-min="45" /><span class="name">Spa pedicure</span><span class="dur">45 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Deluxe spa pedicure" data-min="60" /><span class="name">Deluxe spa pedicure</span><span class="dur">1 hr</span></label>
+            <label class="svc-option"><input type="checkbox" value="Organic Rainbow pedicure" data-min="75" /><span class="name">Organic Rainbow pedicure</span><span class="dur">1 hr 15 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Volcano Detox pedicure" data-min="90" /><span class="name">Volcano Detox pedicure</span><span class="dur">1 hr 30 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Gel pedicure" data-min="60" /><span class="name">Gel pedicure</span><span class="dur">1 hr</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="book-group">
+          <legend><span class="chip c3"></span>Gel, acrylic &amp; dip</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Acrylic full set" data-min="75" /><span class="name">Acrylic full set</span><span class="dur">1 hr 15 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Acrylic fill" data-min="60" /><span class="name">Acrylic fill</span><span class="dur">1 hr</span></label>
+            <label class="svc-option"><input type="checkbox" value="Dip powder" data-min="60" /><span class="name">Dip powder</span><span class="dur">1 hr</span></label>
+            <label class="svc-option"><input type="checkbox" value="Gel-X" data-min="90" /><span class="name">Gel-X</span><span class="dur">1 hr 30 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Hard gel" data-min="75" /><span class="name">Hard gel</span><span class="dur">1 hr 15 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Polish change" data-min="15" /><span class="name">Polish change</span><span class="dur">15 min</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="book-group">
+          <legend><span class="chip c4"></span>Extras</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Nail art / designs" data-min="15" /><span class="name">Nail art / designs</span><span class="dur">15 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Soak-off" data-min="15" /><span class="name">Soak-off</span><span class="dur">15 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Paraffin wax treatment" data-min="10" /><span class="name">Paraffin wax treatment</span><span class="dur">10 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Callus removal" data-min="15" /><span class="name">Callus removal</span><span class="dur">15 min</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="book-group">
+          <legend><span class="chip c5"></span>Lashes</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Lash extensions, full set" data-min="120" /><span class="name">Lash extensions, full set</span><span class="dur">2 hr</span></label>
+            <label class="svc-option"><input type="checkbox" value="Lash fill" data-min="60" /><span class="name">Lash fill</span><span class="dur">1 hr</span></label>
+            <label class="svc-option"><input type="checkbox" value="Lash perm" data-min="60" /><span class="name">Lash perm</span><span class="dur">1 hr</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="book-group">
+          <legend><span class="chip c6"></span>Waxing &amp; facials</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Eyebrow wax" data-min="15" /><span class="name">Eyebrow wax</span><span class="dur">15 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Face waxing" data-min="20" /><span class="name">Face waxing</span><span class="dur">20 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Body waxing" data-min="30" /><span class="name">Body waxing</span><span class="dur">30 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="European facial" data-min="60" /><span class="name">European facial</span><span class="dur">1 hr</span></label>
+            <label class="svc-option"><input type="checkbox" value="Mini facial" data-min="30" /><span class="name">Mini facial</span><span class="dur">30 min</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="book-group">
+          <legend><span class="chip c7"></span>Keiki (9 &amp; under)</legend>
+          <div class="svc-options">
+            <label class="svc-option"><input type="checkbox" value="Kids manicure" data-min="20" /><span class="name">Kids manicure</span><span class="dur">20 min</span></label>
+            <label class="svc-option"><input type="checkbox" value="Kids pedicure" data-min="30" /><span class="name">Kids pedicure</span><span class="dur">30 min</span></label>
+          </div>
+        </fieldset>
+          <p class="book-note">Times are estimates. Your nail tech will let you know if your visit needs more or less time.</p>
+        </div>
+
+        <div class="book-card">
+          <div aria-live="polite">
+            <div class="est-label">Your visit</div>
+            <div class="est-value" id="est-value">Pick a service</div>
+            <div class="est-list" id="est-list">Nothing selected yet</div>
+          </div>
+
+          <div>
+            <div class="cal-head">
+              <button type="button" class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
+              <strong id="cal-label">Month</strong>
+              <button type="button" class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
+            </div>
+            <div class="cal-dow" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+            <div class="cal-days" id="cal-days" role="group" aria-label="Pick a day"></div>
+          </div>
+
+          <div class="field">
+            <label for="f-time">Start time <span id="day-label" style="font-weight:600;color:var(--plum-2)"></span></label>
+            <select id="f-time" name="preferred_time"><option value="">Pick a service first</option></select>
+          </div>
+
+          <div class="field-row">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required /></div>
+            <div class="field"><label for="f-phone">Mobile number</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(808) 000-0000" required /></div>
+          </div>
+          <div class="field"><label for="f-email">Email <span style="font-weight:600;color:var(--plum-2)">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email" /></div>
+          <div class="field"><label for="f-notes">Anything we should know? <span style="font-weight:600;color:var(--plum-2)">(optional)</span></label><textarea id="f-notes" name="notes" placeholder="Design ideas, nail length, a preferred tech…"></textarea></div>
+
+          <input type="hidden" name="services" id="f-services" />
+          <input type="hidden" name="estimated_time" id="f-estimate" />
+          <input type="hidden" name="preferred_date" id="f-date" />
+          <input type="hidden" name="_subject" id="f-subject" value="New appointment request" />
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary" id="f-submit">Send request</button>
+          <p class="book-small">Prefer to talk? Call <a href="tel:+18087351751">(808) 735-1751</a></p>
+        </div>
+      </form>
+
+      <div class="sent-card" id="sent-card" hidden tabindex="-1">
+        <h2>Mahalo! Request sent.</h2>
+        <p id="sent-summary"></p>
+        <p style="color:var(--plum-2)">We&rsquo;ll call or text you shortly to confirm your time.</p>
+        <p style="margin-top:1.4rem"><a href="index.html" class="btn btn-ghost">Back to home</a></p>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <svg class="lei-band" aria-hidden="true"><defs><pattern id="leiBand" width="128" height="64" patternUnits="userSpaceOnUse"><rect width="128" height="64" fill="#3B1E33"/><g fill="#4E9A62"><ellipse cx="0" cy="32" rx="5" ry="13" transform="rotate(55 0 32)"/><ellipse cx="0" cy="32" rx="5" ry="13" transform="rotate(-55 0 32)"/><ellipse cx="64" cy="32" rx="5" ry="13" transform="rotate(55 64 32)"/><ellipse cx="64" cy="32" rx="5" ry="13" transform="rotate(-55 64 32)"/><ellipse cx="128" cy="32" rx="5" ry="13" transform="rotate(55 128 32)"/><ellipse cx="128" cy="32" rx="5" ry="13" transform="rotate(-55 128 32)"/></g><g transform="translate(32 33) scale(0.56)"><g fill="#FFF8EE" stroke="#3B1E33" stroke-width="3"><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(12)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(84)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(156)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(228)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(300)"/></g><circle r="7" fill="#F2B632" stroke="#3B1E33" stroke-width="2.5"/></g><g transform="translate(96 33) scale(0.5)"><g fill="#D9443A" stroke="#3B1E33" stroke-width="3"><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(0)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(72)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(144)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(216)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(288)"/></g><circle r="6" fill="#8E1F17"/><path d="M0 0 L16 -30" stroke="#F2B632" stroke-width="4" stroke-linecap="round"/><circle cx="17" cy="-32" r="5" fill="#F2B632"/></g></pattern></defs><rect width="100%" height="64" fill="url(#leiBand)"/></svg>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo-word">Rainbow</div>
+        <div class="footer-logo-line"><span class="n">NAILS</span><span class="k">KAIMUKĪ</span></div>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>1148 Koko Head Ave<br>Honolulu, HI 96816</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Every day<br>9:00 am – 7:00 pm</p>
+      </div>
+      <div>
+        <h4>Say aloha</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+18087351751">(808) 735-1751</a></li>
+          <li><a href="https://www.instagram.com/rainbownails.kaimuki/" target="_blank" rel="noopener">@rainbownails.kaimuki</a></li>
+          <li><a href="book.html">Request an appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="yr">2026</span> Rainbow Nails, Kaimukī, Honolulu</div>
+  </footer>
+
+  <a href="tel:+18087351751" class="call-bar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg> Call to book</a>
+
+  <script src="nav.js"></script>
+  <script src="book.js"></script>
+</body>
+</html>

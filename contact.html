@@ -10,7 +10,6 @@
   <meta property="og:image" content="og-image.png" />
   <meta name="theme-color" content="#3B1E33" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/svg+xml" href="logo-mark.svg" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
@@ -24,9 +23,9 @@
 
   <nav class="nav" aria-label="Main">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="logo-mark.svg" alt="" width="44" height="44" />
-        <span class="nav-logo-text">Rainbow Nails<span class="nav-logo-sub">Kaimukī, Oʻahu</span></span>
+      <a href="index.html" class="nav-logo" aria-label="Rainbow Nails, Kaimukī, home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#3B1E33"/><g fill="none" stroke-width="3.1"><path stroke="#D9443A" d="M8 46 A24 24 0 0 1 56 46"/><path stroke="#EE7D2B" d="M11 46 A21 21 0 0 1 53 46"/><path stroke="#F2B632" d="M14 46 A18 18 0 0 1 50 46"/><path stroke="#4E9A62" d="M17 46 A15 15 0 0 1 47 46"/><path stroke="#3E95C9" d="M20 46 A12 12 0 0 1 44 46"/><path stroke="#7D86D6" d="M23 46 A9 9 0 0 1 41 46"/><path stroke="#B48AD0" d="M26 46 A6 6 0 0 1 38 46"/></g><g transform="translate(32 43.2) scale(0.23)"><g fill="#FFF8EE" stroke="#3B1E33" stroke-width="3"><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(12)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(84)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(156)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(228)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(300)"/></g><circle r="7" fill="#F2B632" stroke="#3B1E33" stroke-width="2.5"/></g></svg>
+        <span class="nav-logo-text">Rainbow Nails<span class="nav-logo-sub">KAIMUKĪ</span></span>
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -34,7 +33,7 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" class="active" aria-current="page">Visit</a></li>
-        <li><a href="tel:+18087351751" class="nav-call">Call (808) 735-1751</a></li>
+        <li><a href="book.html" class="nav-cta">Request an appointment</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     </div>
@@ -43,7 +42,7 @@
   <main>
   <header class="page-header">
     <div class="wrap">
-      <h1>Visit us</h1>
+      <h1 class="rainbow-shadow--sm">Visit us</h1>
       <p>We&rsquo;re on Koko Head Avenue in Kaimukī, open every day.</p>
     </div>
   </header>
@@ -52,11 +51,10 @@
     <div class="wrap visit-grid">
       <div>
         <div class="visit-block">
-          <h2>Call to book</h2>
+          <h2>Book a visit</h2>
           <a href="tel:+18087351751" class="phone-big">(808) 735-1751</a>
-          <p>Tap the number to call from your phone.</p>
+          <p>Tap the number to call, or <a href="book.html">request an appointment online</a>.</p>
         </div>
-
         <div class="visit-block">
           <h2>Hours</h2>
           <table class="hours">
@@ -69,7 +67,6 @@
             <tr data-day="0"><td>Sunday</td><td>9:00 am – 7:00 pm</td></tr>
           </table>
         </div>
-
         <div class="visit-block" id="parking">
           <h2>Parking</h2>
           <ul class="parking">
@@ -78,14 +75,13 @@
           </ul>
         </div>
       </div>
-
       <div>
         <div class="map-frame">
           <iframe src="https://www.google.com/maps?q=Rainbow+Nails,+1148+Koko+Head+Ave,+Honolulu,+HI+96816&z=17&output=embed" title="Map to Rainbow Nails, 1148 Koko Head Ave, Honolulu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
         <p style="margin-top:1.4rem"><strong>Rainbow Nails</strong><br>1148 Koko Head Ave<br>Honolulu, HI 96816</p>
         <div class="map-links">
-          <a href="https://www.google.com/maps/dir/?api=1&destination=Rainbow+Nails,+1148+Koko+Head+Ave,+Honolulu,+HI+96816" target="_blank" rel="noopener" class="btn btn-call">Get directions</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Rainbow+Nails,+1148+Koko+Head+Ave,+Honolulu,+HI+96816" target="_blank" rel="noopener" class="btn btn-primary">Get directions</a>
           <a href="https://www.instagram.com/rainbownails.kaimuki/" target="_blank" rel="noopener" class="btn btn-ghost">Instagram</a>
         </div>
       </div>
@@ -93,26 +89,27 @@
   </section>
   </main>
 
-  <div class="stripes stripes--thin" aria-hidden="true"></div>
+  <svg class="lei-band" aria-hidden="true"><defs><pattern id="leiBand" width="128" height="64" patternUnits="userSpaceOnUse"><rect width="128" height="64" fill="#3B1E33"/><g fill="#4E9A62"><ellipse cx="0" cy="32" rx="5" ry="13" transform="rotate(55 0 32)"/><ellipse cx="0" cy="32" rx="5" ry="13" transform="rotate(-55 0 32)"/><ellipse cx="64" cy="32" rx="5" ry="13" transform="rotate(55 64 32)"/><ellipse cx="64" cy="32" rx="5" ry="13" transform="rotate(-55 64 32)"/><ellipse cx="128" cy="32" rx="5" ry="13" transform="rotate(55 128 32)"/><ellipse cx="128" cy="32" rx="5" ry="13" transform="rotate(-55 128 32)"/></g><g transform="translate(32 33) scale(0.56)"><g fill="#FFF8EE" stroke="#3B1E33" stroke-width="3"><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(12)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(84)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(156)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(228)"/><ellipse cx="0" cy="-17" rx="12" ry="21" transform="rotate(300)"/></g><circle r="7" fill="#F2B632" stroke="#3B1E33" stroke-width="2.5"/></g><g transform="translate(96 33) scale(0.5)"><g fill="#D9443A" stroke="#3B1E33" stroke-width="3"><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(0)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(72)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(144)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(216)"/><ellipse cx="0" cy="-19" rx="15" ry="22" transform="rotate(288)"/></g><circle r="6" fill="#8E1F17"/><path d="M0 0 L16 -30" stroke="#F2B632" stroke-width="4" stroke-linecap="round"/><circle cx="17" cy="-32" r="5" fill="#F2B632"/></g></pattern></defs><rect width="100%" height="64" fill="url(#leiBand)"/></svg>
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <p class="footer-logo">Rainbow Nails</p>
+        <div class="footer-logo-word">Rainbow</div>
+        <div class="footer-logo-line"><span class="n">NAILS</span><span class="k">KAIMUKĪ</span></div>
+      </div>
+      <div>
+        <h4>Visit</h4>
         <p>1148 Koko Head Ave<br>Honolulu, HI 96816</p>
-        <p style="margin-top:.6rem"><a href="tel:+18087351751">(808) 735-1751</a></p>
       </div>
       <div>
         <h4>Hours</h4>
-        <p>Open every day<br>9:00 am – 7:00 pm</p>
+        <p>Every day<br>9:00 am – 7:00 pm</p>
       </div>
       <div>
-        <h4>Around the site</h4>
+        <h4>Say aloha</h4>
         <ul class="footer-links">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Visit &amp; parking</a></li>
-          <li><a href="https://www.instagram.com/rainbownails.kaimuki/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="tel:+18087351751">(808) 735-1751</a></li>
+          <li><a href="https://www.instagram.com/rainbownails.kaimuki/" target="_blank" rel="noopener">@rainbownails.kaimuki</a></li>
+          <li><a href="book.html">Request an appointment</a></li>
         </ul>
       </div>
     </div>
